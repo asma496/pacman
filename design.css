@@ -1,0 +1,181 @@
+body{
+    background-color: black;
+}
+
+
+
+
+.line , .line2 {
+    width: 500px;
+    height: 10px;
+    border-top:2px dashed white ;
+    top: 20%;
+    left: 50px;
+    position: absolute;
+    animation:lineanim 1s infinite linear reverse;
+
+}
+
+.line2{
+ top: 30%;
+ left: 50%;
+
+}
+
+.road{
+    width: 300%;
+    height: 15px;
+    top: 80%;
+    position: absolute;
+    border-top: 12px dashed white;
+    animation: roadanim 5s infinite linear ;
+    left: 0;
+  
+}
+
+
+
+
+/* .road2{
+    width: 100%;
+    height: 50px;
+    top: 80%;
+    position: absolute;
+    border-top: 12px dashed white;
+    animation: road2 10s infinite linear reverse;
+    left: 0%;
+  
+} */
+.pacman{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    animation: bounce 1s infinite linear;
+}
+.eye{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 25%;
+    left: 46%;
+}
+.mouth{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+animation: mouthanim 0.7s infinite;
+   
+
+}
+@keyframes mouthanim{
+    0% {
+        clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+      }
+      25% {
+        clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+      }
+      
+      50% {
+        clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+      }
+      
+      75% {
+       clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+      }
+      
+      100% {
+       clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+      }
+}
+
+.food{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 66%;
+    left: 51%;
+    animation: foodanim 0.7s infinite;
+
+   
+
+}
+@keyframes foodanim {
+    0% { 
+      transform: translateX(0);
+       opacity: 1;
+    }
+    100% {
+      transform: translateX(-90px);
+      opacity: 0;
+    }
+  }
+
+@keyframes roadanim{
+    from{
+        left: 0%;
+    }
+
+    to{
+        left: -1200px;
+    
+       
+    }
+}
+
+@keyframes bounce{
+    0%, 20%, 40%, 60%, 80%, 100%{transform: translateY(0)}
+    40%{transform: translateY(-30px);}
+    60%{transform: translateY(-40px);}
+
+}
+
+@keyframes lineanim{
+    from{
+        transform: translate(0);
+    }
+
+    to{
+        transform: translate(100px);
+       
+    }
+/* }
+ @keyframes road2{
+    from{left: 0%;}
+
+    to{ left: 1300px;}
+
+
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
