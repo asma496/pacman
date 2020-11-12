@@ -1,11 +1,21 @@
 .wrapper, body{
     margin: 2px;
-    background-color: rgb(240, 156, 61);
+    background-color: rgb(54, 4, 54);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+color: whitesmoke;
+
+
 }
+
+h1,h2{
+    color: whitesmoke;
+}
+
 .wrapper{
     width: 95%;
     margin: auto;
+    
     
 }
 .title{
@@ -19,26 +29,51 @@
     height: 45px;
     border-radius: 10px;
     border: 3px solid grey;
+    
 }
+button{
+    border-radius: 10px;
+    border: 3px solid grey;
+    width:70px ;
+    height: 40px;
+
+}
+
 .recipeBox{
     margin: 1px;
+   
 }
-.box, .img{
+.row{
+    margin: auto;
+    /* display:flex; */
+    margin-top: 60px;
+}
+.box {
     display: inline-block;
     width: 200px ;
     height: 200px ;
-    background-color: aquamarine;
+    background-color: black;
     border: 5px solid white;
     margin: 10px;
     padding: 5px;
     }
+    .box1 {
+       font-size: 30px;
+       margin-top: 50px;
+      
+        }
 
-    div, img{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
+ 
 .myimg{
-    margin: auto;
-    display: inline-block;
+    width: 200px ;
+    height: 150px ;   
 }
+.myimg2{
+    width: 200px ;
+    height: 200px ; 
+    background-color: black;
+    border: 5px solid white;
+    margin: 10px;
+    padding: 5px;  
+}
+
