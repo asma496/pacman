@@ -1,6 +1,6 @@
 .wrapper, body{
     margin: 2px;
-    background-color: rgb(54, 4, 54);
+    background-color: #2d2013;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 text-align: center;
 color: whitesmoke;
@@ -38,6 +38,31 @@ button{
     height: 40px;
 
 }
+@media(max-width: 800px) {
+
+}
+@media(max-width: 700px) {
+    
+}
+@media(max-width: 500px) {
+    input[type='text']{
+    width:  100%;
+    }
+}
+/* .meal-info{
+    background-color: rgb(119, 115, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in;
+    opacity: 0;
+}
+.recipeBox:hover .meal-info{
+    opacity: 1; 
+ } */
+
+
+
 
 .recipeBox{
     margin: 1px;
